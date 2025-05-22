@@ -14,11 +14,11 @@ logo: "/assets/images/20230825_125856.jpg"
 float_logo: true # true, false (default)
 
 # blog cover
-cover: ""/assets/images/facets-of-data-analytics.jpg""
+cover: "/assets/images/facets-of-data-analytics.jpg"
 
 name: 'Amy Fischbach'
 author: 'Amy Fischbach'
-author_image: ""/assets/images/20230825_125856.jpg""
+author_image: "/assets/images/20230825_125856.jpg"
 
 paginate:	5
 
