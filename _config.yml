@@ -10,15 +10,15 @@ description: > # this means to ignore newlines until "email:"
 
 email: amylfischbach@gmail.com
 #blog logo
-logo: "/assets/images/df_logo.jpg"
+logo: "/assets/images/20230825_125856.jpg"
 float_logo: true # true, false (default)
 
 # blog cover
-cover: ""C:\Users\AmyF1\OneDrive\Documents\Random\facets-of-data-analytics.jpg""
+cover: ""/assets/images/facets-of-data-analytics.jpg""
 
 name: 'Amy Fischbach'
 author: 'Amy Fischbach'
-author_image: ""C:\Users\AmyF1\OneDrive\Pictures\Old Phone Photos\20230825_125856.jpg""
+author_image: ""/assets/images/20230825_125856.jpg""
 
 paginate:	5
 
