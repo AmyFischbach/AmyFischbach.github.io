@@ -14,11 +14,11 @@ logo: "/assets/images/df_logo.jpg"
 float_logo: true # true, false (default)
 
 # blog cover
-cover: "/assets/images/cA4aKEIPQrerBnp1yGHv_IMG_9534-3-2.jpg"
+cover: ""C:\Users\AmyF1\OneDrive\Documents\Random\facets-of-data-analytics.jpg""
 
-name: 'Dirk Fabisch'
-author: 'Dirk Fabisch'
-author_image: "/assets/images/author.jpg"
+name: 'Amy Fischbach'
+author: 'Amy Fischbach'
+author_image: ""C:\Users\AmyF1\OneDrive\Pictures\Old Phone Photos\20230825_125856.jpg""
 
 paginate:	5
 
