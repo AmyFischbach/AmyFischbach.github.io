@@ -15,17 +15,16 @@ title: Home
   <h1 class="blog-title">{{ site.title }}</h1>
   <h2 class="blog-description">{{ site.description }}</h2>
 
-  <div class="custom-links">
-    {% for social in site.social %}
-      {% if social.url %}
-        <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}>
-          <i class="fa fa-{{ social.icon }}"></i>
-        </a>
-        &nbsp;&nbsp;·&nbsp;&nbsp;
-      {% endif %}
-    {% endfor %}
-    <a href="{{ "/about/" | prepend: site.baseurl }}">About</a>
-  </div>
+<div class="custom-links">
+  {% for social in site.social %}
+    {% if social.url %}
+      <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}>
+        <i class="fa fa-{{ social.icon }}"></i>
+      </a>
+      &nbsp;&nbsp;·&nbsp;&nbsp;
+    {% endif %}
+  {% endfor %}
+</div>
 </header>
 
 <main class="content" role="main">
@@ -132,6 +131,50 @@ title: Home
 
     </div>
   </section>
+<section>
+  <h2>Projects</h2>
+  <div class="timeline">
+
+    <div class="job-card">
+      <div class="details">
+        <h3>SIL GeoMapping Tool Building</h3>
+        <div class="meta">
+          <em>Presented at MWDSI 2025</em>
+        </div>
+        <ul>
+          <li>
+            <a href="/assets/docs/Mapping the Path to Translations Empowering SIL to Reach New Frontiers in Language Translations.docx" target="_blank">
+              📄 Project Paper (DOCX)
+            </a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/watch?v=NL5knCowE5g" target="_blank">
+              🎥 YouTube Explanation
+            </a>
+          </li>
+        </ul>
+        <p><em>🏆 Awarded 1st Place at the 2025 Midwest Decision Sciences Institute (MWDSI) Conference</em></p>
+      </div>
+    </div>
+
+    <div class="job-card">
+      <div class="details">
+        <h3>GAP Case Analysis</h3>
+        <div class="meta">
+          <em>Strategic Retail Analytics Project</em>
+        </div>
+        <ul>
+          <li>
+            <a href="https://github.com/AmyFischbach/GAP_case_analysis" target="_blank">
+              🔗 GitHub Repository
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 </main>
 
