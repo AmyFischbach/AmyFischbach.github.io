@@ -1,85 +1,106 @@
+---
+layout: default
+title: Home
+---
+
+<header class="blog-header">
+  {% if site.logo %}
+    <a class="blog-logo" href="{{ site.url }}{{ site.baseurl }}" style="background-image: url('{{ site.logo | prepend: site.baseurl }}')">{{ site.title }}</a>
+  {% endif %}
+  <h1 class="blog-title">{{ site.title }}</h1>
+  <h2 class="blog-description">{{ site.description }}</h2>
+
+  <div class="custom-links">
+    {% for social in site.social %}
+      {% if social.url %}
+        <a class="icon-{{ social.icon }}" href="{{ social.url }}" {% if social.desc %} title="{{ social.desc }}"{% endif %}>
+          <i class="fa fa-{{ social.icon }}"></i>
+        </a>
+        &nbsp;&nbsp;·&nbsp;&nbsp;
+      {% endif %}
+    {% endfor %}
+    <a href="{{ "/about/" | prepend: site.baseurl }}">About</a>
+  </div>
+</header>
+
 <main class="content" role="main">
 
   <section>
     <h2>About Me</h2>
-    <p>I’m Amy Fischbach, a Business and Data Science Analyst from Chicago, IL who is passionate about translating data into usable business decisions. I specialize in coding languages sucvh as SQL, Python, and R, predictive modeling, and strategic analytics.</p>
+    <p>I’m Amy Fischbach, a Business and Data Science Analyst from Chicago, IL who is passionate about translating data into usable business decisions. I specialize in coding languages such as SQL, Python, and R, predictive modeling, and strategic analytics.</p>
   </section>
 
   <section>
     <h2>Education</h2>
     <ul>
       <li>
-      <img src="/assets/logos/purdue.png" alt="Purdue University" style="height: 30px; vertical-align: middle; margin-right: 8px;">
-      <strong>M.S. in Business Analytics and Information Management</strong> — Purdue University, Aug 2024 – Aug 2025
-    </li>
-    <li>
-      <img src="/assets/logos/iu.jpg" alt="Indiana University" style="height: 30px; vertical-align: middle; margin-right: 8px;">
-      <strong>B.S. in Economic Consulting, Business Analytics, and Technology Management</strong> — Indiana University, Aug 2015 – May 2019
-    </li>
+        <img src="/assets/logos/purdue.png" alt="Purdue University" style="height: 30px; vertical-align: middle; margin-right: 8px;">
+        <strong>M.S. in Business Analytics and Information Management</strong> — Purdue University, Aug 2024 – Aug 2025
+      </li>
+      <li>
+        <img src="/assets/logos/iu.jpg" alt="Indiana University" style="height: 30px; vertical-align: middle; margin-right: 8px;">
+        <strong>B.S. in Economic Consulting, Business Analytics, and Technology Management</strong> — Indiana University, Aug 2015 – May 2019
+      </li>
     </ul>
   </section>
 
-<section>
+  <section>
     <h2>Work Experience</h2>
     <ul>
       <li>
-      <img src="/assets/logos/royalcaribbean.png" alt="Royal Caribbean" style="height: 30px; vertical-align: middle; margin-right: 8px;">
+        <img src="/assets/logos/royalcaribbean.png" alt="Royal Caribbean" style="height: 30px; vertical-align: middle; margin-right: 8px;">
         <strong>Lead, Onboard Revenue and Analytics</strong> — <em>Royal Caribbean Group</em>, Jan 2024 – Jul 2024<br>
-        •	Set new March Perfect Day sales record with total gross revenue of $13M
-        •	Initiated creation of Airport Transfer products, resulting in 300K for 2024
-        •	Devised and constructed Shore Excursion promotions for Flash Sales
-        •	Trained 3-person team on price management, promotion building, and report creation
-        •	Collaborated with Data Science team to simplify ongoing template for future pricing automation for products
+        • Set new March Perfect Day sales record with total gross revenue of $13M<br>
+        • Initiated creation of Airport Transfer products, resulting in 300K for 2024<br>
+        • Devised and constructed Shore Excursion promotions for Flash Sales<br>
+        • Trained 3-person team on price management, promotion building, and report creation<br>
+        • Collaborated with Data Science team to simplify ongoing template for future pricing automation for products
       </li>
       <li>
-      <img src="/assets/logos/royalcaribbean.png" alt="Royal Caribbean" style="height: 30px; vertical-align: middle; margin-right: 8px;">
-       <strong>Sr. Analyst, Onboard Revenue and Analytics</strong> — <em>Royal Caribbean Group</em>, Sep 2021 – Jan 2024<br>
-        •   Continued to analyze Perfect Day pricing, achieved record $12M in gross revenue in July 2023
-        •	Opened new Hideaway Beach products in Perfect Day, which brough ~$700K within first week of sales 
-        •	Updated PowerBI reporting for weekly Shorex performance and achievement to target for each month
-        •	Planned pricing and inventory strategy for Celebrity itineraries to Perfect Day, first time brand visited the island
-
+        <img src="/assets/logos/royalcaribbean.png" alt="Royal Caribbean" style="height: 30px; vertical-align: middle; margin-right: 8px;">
+        <strong>Sr. Analyst, Onboard Revenue and Analytics</strong> — <em>Royal Caribbean Group</em>, Sep 2021 – Jan 2024<br>
+        • Continued to analyze Perfect Day pricing, achieved record $12M in gross revenue in July 2023<br>
+        • Opened new Hideaway Beach products in Perfect Day, which brought ~$700K within first week of sales<br>
+        • Updated PowerBI reporting for weekly Shorex performance and achievement to target for each month<br>
+        • Planned pricing and inventory strategy for Celebrity itineraries to Perfect Day, first time brand visited the island
       </li>
-       <li>
-      <img src="/assets/logos/royalcaribbean.png" alt="Royal Caribbean" style="height: 30px; vertical-align: middle; margin-right: 8px;">
-       <strong>Analyst, Onboard Revenue and Analytics</strong> — <em>Royal Caribbean Group</em>, Jul 2019 – Sep 2021<br>
-        •	Price managed Perfect Day (the most popular port) tours to help achieve $25 million in total revenue in 2019
-        •	Created Shorex Action Plan for Return to Service to target pent up demand combined with Covid-19 restrictions
-        •	Designed new Shorex Commissions format to accommodate shipboard and shoreside expectations
+      <li>
+        <img src="/assets/logos/royalcaribbean.png" alt="Royal Caribbean" style="height: 30px; vertical-align: middle; margin-right: 8px;">
+        <strong>Analyst, Onboard Revenue and Analytics</strong> — <em>Royal Caribbean Group</em>, Jul 2019 – Sep 2021<br>
+        • Price managed Perfect Day (the most popular port) tours to help achieve $25 million in total revenue in 2019<br>
+        • Created Shorex Action Plan for Return to Service to target pent-up demand combined with Covid-19 restrictions<br>
+        • Designed new Shorex Commissions format to accommodate shipboard and shoreside expectations
       </li>
-      </li>
-         <li>
-      <img src="/assets/logos/motorola.jpg" alt="Motorola" style="height: 30px; vertical-align: middle; margin-right: 8px;">
-       <strong>Data Analytics Intern</strong> — <em>Motorola Solutions</em>, May 2017 – Aug 2018<br>
-        •	Built data architecture for Tableau reports through communication with various groups for all requirements
-        •	Optimized procurement report process from 17 steps (30-40 mins. of work) to 12 steps (15 mins. of work)
-        •	Fielded data requests and modeling asks for Category Managers to adjust Tableau reporting
+      <li>
+        <img src="/assets/logos/motorola.jpg" alt="Motorola" style="height: 30px; vertical-align: middle; margin-right: 8px;">
+        <strong>Data Analytics Intern</strong> — <em>Motorola Solutions</em>, May 2017 – Aug 2018<br>
+        • Built data architecture for Tableau reports through communication with various groups for all requirements<br>
+        • Optimized procurement report process from 17 steps (30–40 mins) to 12 steps (15 mins)<br>
+        • Fielded data requests and modeling asks for Category Managers to adjust Tableau reporting
       </li>
     </ul>
   </section>
 
-
   <section>
-  <h2>Projects</h2>
-  <ul>
-    <li>
-      <strong>SIL GeoMapping Tool Building</strong><br>
-      <a href="/assets/docs/Mapping the Path to Translations Empowering SIL to Reach New Frontiers in Language Translations.docx" target="_blank">
-        Project Paper (DOCX)
-      </a> |
-      <a href="https://www.youtube.com/watch?v=NL5knCowE5g" target="_blank">
-        YouTube Explanation
-      </a><br>
-      <em>🏆 Awarded 1st Place at the 2025 Midwest Decision Sciences Institute (MWDSI) Conference</em>
-    </li>
-             
-    <li>
-      <a href="https://github.com/AmyFischbach/GAP_case_analysis" target="_blank">
-        GAP Case Analysis
-      </a>
-    </li>
-  </ul>
-</section>
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <strong>SIL GeoMapping Tool Building</strong><br>
+        <a href="/assets/docs/Mapping the Path to Translations Empowering SIL to Reach New Frontiers in Language Translations.docx" target="_blank">
+          Project Paper (DOCX)
+        </a> |
+        <a href="https://www.youtube.com/watch?v=NL5knCowE5g" target="_blank">
+          YouTube Explanation
+        </a><br>
+        <em>🏆 Awarded 1st Place at the 2025 Midwest Decision Sciences Institute (MWDSI) Conference</em>
+      </li>
+      <li>
+        <a href="https://github.com/AmyFischbach/GAP_case_analysis" target="_blank">
+          GAP Case Analysis
+        </a>
+      </li>
+    </ul>
+  </section>
 
   <section>
     <h2>Certifications</h2>
