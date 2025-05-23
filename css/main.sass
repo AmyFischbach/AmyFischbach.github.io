@@ -238,59 +238,64 @@ body
       color: #333
 /* Timeline styling for education and work experience */
 .timeline
+  display: flex
+  flex-direction: column
+  gap: 40px
   position: relative
   margin-left: 20px
-  padding-left: 20px
+  padding-left: 30px
   border-left: 3px solid #ccc
 
   .job-card
-  display: grid
-  grid-template-columns: 60px 1fr
-  gap: 20px
-  padding: 20px
-  background: #fff
-  border: 1px solid #ddd
-  border-radius: 8px
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05)
-  position: relative
-  margin: 40px 0
-  transition: box-shadow 0.3s ease
+    display: flex
+    flex-direction: row
+    align-items: flex-start
+    background: #fff
+    border: 1px solid #ddd
+    border-radius: 8px
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05)
+    padding: 20px
+    gap: 20px
+    position: relative
+    width: 100%
+    max-width: 640px
+    transition: box-shadow 0.3s ease
 
-  &:hover
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1)
+    &:hover
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1)
 
-  img
-    width: 50px
-    height: auto
-    object-fit: contain
-    align-self: start
+    img
+      width: 50px
+      height: auto
+      object-fit: contain
+      margin-top: 5px
 
-  .details
-    h3
-      margin: 0 0 8px
-      font-weight: 700
-      font-size: 20px
+    .details
+      flex: 1
 
-    .meta
-      font-style: italic
-      color: #666
-      margin-bottom: 10px
+      h3
+        margin: 0 0 8px
+        font-weight: 700
+        font-size: 20px
 
-    ul
-      padding-left: 20px
-      margin: 0
+      .meta
+        font-style: italic
+        color: #666
+        margin-bottom: 10px
 
+      ul
+        padding-left: 20px
+        margin: 0
 
-    .marker
-      position: absolute
-      left: -30px
-      top: 50%
-      transform: translateY(-50%)
-      width: 14px
-      height: 14px
-      background-color: #333
-      border: 3px solid #fff
-      border-radius: 50%
+  .marker
+    position: absolute
+    left: -11px
+    top: 28px
+    width: 16px
+    height: 16px
+    background: #57ad68
+    border: 2px solid white
+    border-radius: 50%
       z-index: 10
 
     img
