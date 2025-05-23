@@ -22,10 +22,10 @@ author_image: "/assets/images/20230825_125856.jpg"
 
 paginate:	5
 
-url: "http://myblog.***.***" # the base hostname & protocol for your site
+url: "https://amyfischbach.github.io/" # the base hostname & protocol for your site
 baseurl: ""
 #used to display twitter cards
-twitter_handle: '@dirkfabisch'
+#twitter_handle: '@dirkfabisch'
 
 #fill in disqus shortname to use disqus
 #disqus: disqus-shortname
@@ -48,9 +48,9 @@ social:
 #    share_title: ?t=
 #    share_link: "&amp;u="
 
-#  - icon:	github
-  #  url:	https://github.com/dirkfabisch
-   # desc:	Fork me on github
+  - icon:	github
+    url:	https://github.com/AmyFischbach
+    desc:	View my work on github
     #share_url:
     #share_title:
     #share_link:
