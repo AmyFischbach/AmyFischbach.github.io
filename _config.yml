@@ -41,7 +41,7 @@ social:
   #  share_title: ?text=
    # share_link: "&amp;url="
 
-   - icon: file-text
+  - icon: file-text
     url: /assets/docs/AmyFischbach_Resume.pdf
     desc: View my Resume
 #    share_url: https://www.facebook.com/sharer.php
