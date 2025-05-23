@@ -1,18 +1,6 @@
 <!-- header start -->
-<header>
 
-  {% if site.float_logo %}
-    <a href="{{ site.url }}{{ site.baseurl }}" class="logo-readium">
-      <span class="logo" style="background-image: url({{ site.logo }})"></span>
-    </a>
-  {% endif %}
-
-  <nav>
-    <ul>
-      <li><a href="/about">About</a></li>
-      <li><a href="/assets/docs/AmyFischbach_Resume.pdf" target="_blank">Resume</a></li>
-    </ul>
-  </nav>
-
-</header>
+{% if site.float_logo %}
+  <a href="{{ site.url }}{{ site.baseurl }}" class="logo-readium"><span class="logo" style="background-image: url({{ site.logo }})"></span></a>
+{% endif %}
 <!-- header end -->
