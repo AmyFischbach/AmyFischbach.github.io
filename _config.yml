@@ -34,7 +34,7 @@ twitter_handle: '@dirkfabisch'
 
 # social icons and sharing options
 social:
-  - icon:	LinkedIn
+  - icon:	linkedin
     url:	https://www.linkedin.com/in/amyfischbach/
     desc: Connect with me on LinkedIn
   #  share_url: http://twitter.com/share
