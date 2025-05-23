@@ -39,24 +39,31 @@ body
   -o-font-feature-settings: "liga", "dlig"
   font-feature-settings: "liga", "dlig"
 
-.logo-readium
-  position: fixed
-  left: 10px
-  top: 10px
-  width: $rs*3
-  height: $rs*3
-  background-color: #000
-  overflow: hidden
-  z-index: 99
-  .logo
-    display: block
-    position: absolute
-    top: $rs/2
-    left: $rs/2
-    width: $rs*2
-    height: $rs*2
-    background-size: cover
-    background-repeat: no-repeat
+.logo-readium {
+  position: fixed;
+  left: 10px;
+  top: 10px;
+  width: 96px;
+  height: 96px;
+  background-color: #000;
+  border-radius: 50%;
+  overflow: hidden;
+  z-index: 99;
+}
+
+.logo-readium .logo {
+  display: block;
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  width: 72px;
+  height: 72px;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
 
 .teaserimage
   height: 450px
