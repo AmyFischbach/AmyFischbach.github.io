@@ -244,20 +244,42 @@ body
   border-left: 3px solid #ccc
 
   .job-card
-    position: relative
-    margin: 30px 0
-    padding: 16px 20px 16px 40px
-    border: 1px solid #ddd
-    border-radius: 8px
-    background: #fff
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05)
-    display: flex
-    align-items: center
-    gap: 20px
-    transition: box-shadow 0.3s ease
+  display: grid
+  grid-template-columns: 60px 1fr
+  gap: 20px
+  padding: 20px
+  background: #fff
+  border: 1px solid #ddd
+  border-radius: 8px
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05)
+  position: relative
+  margin: 40px 0
+  transition: box-shadow 0.3s ease
 
-    &:hover
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15)
+  &:hover
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1)
+
+  img
+    width: 50px
+    height: auto
+    object-fit: contain
+    align-self: start
+
+  .details
+    h3
+      margin: 0 0 8px
+      font-weight: 700
+      font-size: 20px
+
+    .meta
+      font-style: italic
+      color: #666
+      margin-bottom: 10px
+
+    ul
+      padding-left: 20px
+      margin: 0
+
 
     .marker
       position: absolute
